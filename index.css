@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+
+}
+
+header {
+    background: #055c61;
+    padding: 23px 20px;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #fdc306;
+}
+
+.burger {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #056356;
+    color: #fff;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+
+ /* Video Styling */
+ #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1550px;
+    height: 720px;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.9; /* Change to your desired transparency */
+   
+  }
+  
+img{
+    width: 300px;
+    height: 300px;
+    margin-left: 540px;
+}

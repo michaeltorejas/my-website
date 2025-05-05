@@ -1,0 +1,45 @@
+<?php
+    $hour = date("H");
+    if ($hour < 12) {
+        $greeting = "Good morning";
+    } elseif ($hour < 18) {
+        $greeting = "Good afternoon";
+    } else {
+        $greeting = "Good evening";
+    }
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My website</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+        <nav>
+            <div class="logo">Brgy. Pamanlinan Demographic Profiling System </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="login.php">LOGIN</a></li>
+                <li><a href="signup.php">SIGNUP</a></li>
+
+            </ul>
+            <div class="burger" id="burger">&#9776;</div>
+        </nav>
+    </header>
+
+	<section id="home" class="section">
+    </section>
+    <video autoplay muted loop playsinline id="bg-video">
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+    </video>
+    <img src="LOGO.png" alt="" class="logo">
+     <br> <br> <br> <br>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
